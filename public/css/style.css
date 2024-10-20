@@ -1,0 +1,40 @@
+.navbar {
+    background-color: #202020;
+}
+.navbar-brand {
+    font-weight: bold;
+}
+.img-background {
+    background: url('/img/marvel.jpg') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+.img-background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.img-background img {
+    display: none;
+}
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+footer {
+    background-color: #202020;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.modal-body img {
+    max-width: 100%;
+}
